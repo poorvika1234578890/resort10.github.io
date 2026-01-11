@@ -395,3 +395,14 @@
 
     text-align: left;
 }
+/* MOBILE ONLY: hide Pages submenu */
+@media (max-width: 992px) {
+
+  .has-submenu > .submenu {
+    display: none;
+  }
+
+  .has-submenu.open > .submenu {
+    display: block;
+  }
+}

@@ -21,7 +21,7 @@ if(menu.length){
 	menu.slicknav({
   prependTo: ".mobile_menu",
   label: '',
-  allowParentLinks: true,
+  allowParentLinks: false,
   closedSymbol: '+',
   openedSymbol: '-'
   });

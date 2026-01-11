@@ -402,3 +402,16 @@ img {
         display: block;
     }
 }
+/* MOBILE ONLY – hide Pages submenu */
+@media (max-width: 992px) {
+
+  /* hide submenu */
+  .has-submenu > .submenu {
+    display: none !important;
+  }
+
+  /* show when active */
+  .has-submenu.active > .submenu {
+    display: block !important;
+  }
+}

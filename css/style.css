@@ -4147,3 +4147,222 @@ h6 {
     text-align: left;
 }
 
+/* ===== Footer Base ===== */
+.footer {
+    background: #000;
+    color: #ccc;
+    padding: 80px 0 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer_top {
+    width: 100%;
+}
+
+.footer_widget {
+    margin-bottom: 30px;
+}
+
+/* ===== Headings ===== */
+.footer_title {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* ===== Text ===== */
+.footer_text {
+    font-size: 15px;
+    line-height: 28px;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+}
+
+/* ===== Button ===== */
+.line-button {
+    display: inline-block;
+    background: #ff8c00;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.line-button:hover {
+    background: #ff7000;
+    color: #fff;
+}
+
+/* ===== Navigation & Resources ===== */
+.footer_nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_nav li {
+    margin-bottom: 14px;
+}
+
+.footer_nav li a {
+    color: #bdbdbd;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer_nav li a:hover {
+    color: #ff8c00;
+}
+
+/* ===== Submenu ===== */
+.footer_nav .submenu {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 12px;
+}
+
+.footer_nav .submenu li {
+    margin-bottom: 10px;
+}
+
+.footer_nav .submenu li a {
+    font-size: 13.5px;
+    color: #bdbdbd;
+}
+
+/* ===== Layout Fix ===== */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ===== Responsive ===== */
+
+/* ===== Give more space to Resources column ===== */
+.footer .col-xl-2:last-child {
+    flex: 0 0 28%;
+    max-width: 28%;
+}
+
+/* Increase spacing between resource links */
+.footer .col-xl-2:last-child .footer_nav li {
+    margin-bottom: 18px;
+}
+
+/* Improve readability */
+.footer .col-xl-2:last-child .footer_nav li a {
+    line-height: 1.8;
+}
+/* ================= MOBILE FOOTER FIX ================= */
+@media (max-width: 768px) {
+
+    /* Stack everything cleanly */
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .footer_widget {
+        margin-bottom: 60px; /* space between sections */
+    }
+
+    /* Titles spacing */
+    .footer_title {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    /* Address & Reservation spacing */
+    .footer_text {
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    /* Button spacing */
+    .line-button {
+        margin-top: 10px;
+    }
+
+    /* Navigation & Resources list spacing */
+    .footer_nav li {
+        margin-bottom: 18px;
+    }
+
+    .footer_nav li a {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    /* EXTRA space before Resources (important) */
+    .footer_widget:last-child {
+        margin-top: 40px;
+    }
+
+    /* Remove submenu indentation for mobile */
+    .footer_nav .submenu {
+        padding-left: 0;
+        margin-top: 15px;
+    }
+}
+/* ===== FIX WORD-BY-WORD BREAKING IN MOBILE FOOTER ===== */
+@media (max-width: 768px) {
+
+    .footer_nav li a {
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.8;
+    }
+
+    /* Ensure full width for text */
+    .footer_widget {
+        width: 100%;
+    }
+
+    .footer_nav {
+        width: 100%;
+    }
+}
+/* ===== FORCE FULL WIDTH FOOTER COLUMNS ON MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* Kill Bootstrap column widths */
+    .footer .col-xl-3,
+    .footer .col-xl-2,
+    .footer .col-md-6,
+    .footer .col-lg-3,
+    .footer .col-lg-2 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Ensure footer widgets take full width */
+    .footer_widget {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* FIX TEXT BREAKING */
+    .footer_nav li a {
+        display: block;
+        white-space: normal !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        line-height: 1.9;
+    }
+
+    /* Remove any forced narrow containers */
+    .footer_nav,
+    .footer_nav li {
+        width: 100% !important;
+    }
+}
+/* ===== HIDE ONLY PAGES SUBMENU IN FOOTER ===== */
+.footer_nav li.has-submenu .submenu {
+    display: none !important;
+}

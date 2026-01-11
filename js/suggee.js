@@ -241,3 +241,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+document.addEventListener("click", function (e) {
+    const link = e.target.closest(".footer li.has-submenu > a");
+    if (!link) return;
+
+    if (window.innerWidth <= 768) {
+        e.preventDefault();
+        link.parentElement.classList.toggle("active");
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    var pagesLink = document.querySelector(".footer .pages-toggle");
+
+    if (!pagesLink) {
+        console.error("Pages link not found");
+        return;
+    }
+
+    pagesLink.addEventListener("click", function (e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            this.parentElement.classList.toggle("active");
+        }
+    });
+
+});
