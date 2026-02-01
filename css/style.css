@@ -4472,3 +4472,291 @@ h6 {
         font-size: 14px;
     }
 }
+/* ---------- FONT & BASE ---------- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f7f9fc;
+}
+
+h1, h2 {
+    color: white;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    background: linear-gradient(to bottom right, #e8f1ff, #d7e7ff);
+    text-align: center;
+    padding: 70px 20px;
+    border-bottom: 1px solid #cddfff;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* ---------- INTRO ---------- */
+.intro {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* ---------- ACTIVITY CARDS ---------- */
+.activity-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.activity-card img {
+    width: 70px;
+    height: 70px;
+}
+
+/* ---------- INFO SECTIONS ---------- */
+.info-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* ---------- FADE-IN ANIMATION ---------- */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+    .activity-card {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .activity-card img {
+        width: 55px;
+        height: 55px;
+    }
+}
+/* MAIN CONTAINER */
+.kids-blog-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* TWO COLUMN ROW */
+.activity-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* REVERSE ROW (IMAGE RIGHT) */
+.activity-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE COLUMN FIX */
+.activity-img {
+    flex: 1;
+    height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* FIX IMAGE STRETCHING FOREVER */
+.activity-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXT COLUMN */
+.activity-content {
+    flex: 1;
+}
+
+.activity-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ff7a59, #ffb88c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activity-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #ff7a59, #ffb88c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activity-content p {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.activity-content ul {
+    padding-left: 20px;
+}
+
+.intro-section {
+    margin-bottom: 40px;
+    font-size: 17px;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .activity-row,
+    .activity-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .activity-content h2 {
+        font-size: 26px;
+    }
+
+    .activity-content h1 {
+        font-size: 30px;
+    }
+}
+.paragraph1{
+  color: white;
+}
+.soft-link {
+    color: #ff7a59;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.soft-link:hover {
+    color: #ff9a7a;
+    text-decoration: underline;
+}
+/* Corporate Content Section */
+.corporate-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    line-height: 1.8;
+}
+
+/* HERO TEXT */
+.corp-hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.corp-hero .subheading {
+    font-size: 18px;
+    text-align: center;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* INTRO */
+.corp-intro {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 50px;
+}
+
+/* CONTENT SECTION */
+.corp-section {
+    margin-bottom: 60px;
+}
+
+.corp-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ROW LAYOUT */
+.corp-row {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.corp-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGES */
+.corp-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* CONTENT */
+.corp-content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.corp-content ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .corp-row, .corp-row.reverse {
+        flex-direction: column;
+    }
+}

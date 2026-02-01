@@ -406,3 +406,121 @@
     display: block;
   }
 }
+/* -----------------------------------
+   THEME VARIABLES (MINT THEME)
+----------------------------------- */
+
+:root {
+  --bg-light: #f2fff6;
+  --bg-gradient: linear-gradient(135deg, #e0f9e8, #c8f1d8);
+  --heading-color: #2b5d42;
+  --text-color: #3a6f57;
+  --card-bg: #f6fff9;
+  --shadow: rgba(0,0,0,0.08);
+}
+
+/* -----------------------------------
+   INTRO SECTION
+----------------------------------- */
+
+.corp-intro {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 35px 30px;
+  background: var(--bg-gradient);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.corp-intro p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+/* -----------------------------------
+   CORPORATE CONTENT SECTIONS
+----------------------------------- */
+
+.corp-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 50px 20px;
+  background: var(--bg-light);
+  border-radius: 20px;
+  box-shadow: 0 6px 22px var(--shadow);
+  transition: 0.3s ease;
+}
+
+.corp-section:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGE AREA */
+.corp-img {
+  flex: 1;
+}
+
+.corp-img img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* CONTENT AREA */
+.corp-content {
+  flex: 1.2;
+}
+
+.corp-content h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  color: var(--heading-color);
+}
+
+.corp-content ul {
+  margin-bottom: 15px;
+}
+
+.corp-content li {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.corp-content p {
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* IMAGE LEFT & RIGHT */
+.corp-img.left {
+  order: 1;
+}
+
+.corp-img.right {
+  order: 2;
+}
+
+/* -----------------------------------
+   RESPONSIVE
+----------------------------------- */
+
+@media (max-width: 900px) {
+  .corp-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  .corp-img.left,
+  .corp-img.right {
+    order: 0;
+  }
+}
