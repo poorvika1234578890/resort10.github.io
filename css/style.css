@@ -1571,13 +1571,16 @@ h3 {
   color: #fff;
 }
 .breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/resort/kids-activity.jpg);
 }
 .breadcam_bg_1 {
   background-image: url(../img/banner/bradcam2.png);
 }
 .breadcam_bg_2 {
   background-image: url(../img/banner/bradcam3.png);
+}
+.breadcam_bg_4 {
+  background-image: url(../img/resort/suggee-resort-corporate-outing-group-photo-bangalore.JPG);
 }
 .bradcam_area {
   padding: 170px;
@@ -4484,7 +4487,12 @@ body {
 h1, h2 {
     color: white;
 }
-
+h2 {
+        font-size: 30px;
+        margin-top: 60px;
+        color: #0a3d62;
+        position: relative;
+    }
 /* ---------- HERO SECTION ---------- */
 .hero {
     background: linear-gradient(to bottom right, #e8f1ff, #d7e7ff);
@@ -4759,4 +4767,245 @@ h1, h2 {
     .corp-row, .corp-row.reverse {
         flex-direction: column;
     }
+}
+.kids-blog-hero {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+.kids-blog-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.kids-blog-hero p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.kids-blog-intro {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* BLOCK STYLE */
+.kids-block {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 25px 20px;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.block-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.kids-block h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.kids-block p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.kids-block ul {
+    margin-left: 18px;
+}
+
+.kids-block ul li {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.kids-clean-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.intro p {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.clean-section {
+    margin: 50px 0;
+}
+
+.clean-section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.clean-section p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.clean-section ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.clean-section ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.clean-section img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+    .clean-section h2 {
+        font-size: 22px;
+    }
+}
+.icon-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.icon-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    color: #444;
+}
+
+.icon-list li i {
+    color: #2f8f83;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/* Wrapper for good width alignment */
+.kids-clean-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* All Sections - H2, Content, Image */
+.clean-section {
+    margin: 50px 0;
+}
+
+.clean-section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: 600;
+}
+
+.clean-section p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.clean-section img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .clean-section h2 {
+        font-size: 22px;
+    }
+
+    .clean-section p {
+        font-size: 16px;
+    }
+}
+.kids-hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.kids-hero-section h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.kids-hero-section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .kids-hero-section h1 {
+        font-size: 28px;
+    }
+    .kids-hero-section p {
+        font-size: 16px;
+    }
+}
+.small-img {
+    width: auto;
+    height: 485px;
+    object-fit: cover;
+    margin: 20px auto 0;
+    display: block;
+    border-radius: 12px;
 }
