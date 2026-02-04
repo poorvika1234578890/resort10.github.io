@@ -5147,3 +5147,82 @@ h3::after {
     font-weight: bold;
     line-height: 1;
 }
+/* Apply to ALL slider background images */
+[class^="slider_bg_"] {
+    background-size: cover;
+    background-position: center;
+}
+
+/* MOBILE — compress images */
+@media (max-width: 768px) {
+  [class^="slider_bg_"] {
+      background-size: contain !important; /* shows full image without cropping */
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 300px !important; /* reduce height */
+  }
+}
+
+@media (max-width: 480px) {
+  [class^="slider_bg_"] {
+      background-size: contain !important;
+      height: 220px !important; /* even smaller for small phones */
+  }
+}
+@media (max-width: 768px) {
+
+    /* Fix slider height auto-adjusting */
+    .slider_area,
+    .slider_active,
+    .single_slider {
+        height: auto !important;
+        min-height: 450px; /* adjust as needed */
+        overflow: hidden;  /* removes extra space */
+    }
+
+    /* Compress background image */
+    [class^="slider_bg_"] {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 40px 0; /* keeps your text inside safely */
+    }
+}
+/* MOBILE FIX — remove white gap completely */
+@media (max-width: 768px) {
+
+    /* FORCE slider to have no gap */
+    .slider_area,
+    .slider_active,
+    .single_slider {
+        height: 250px !important; /* fixed height = no white space */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden;
+    }
+
+    /* compress background images */
+    [class^="slider_bg_"] {
+        background-size: cover !important; /* keeps background filled */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* adjust text */
+    .slider_text {
+        margin-top: 60px; /* bring text down */
+    }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+    .slider_area,
+    .slider_active,
+    .single_slider {
+        height: 200px !important;
+    }
+
+    .slider_text {
+        margin-top: 40px;
+    }
+}
