@@ -5226,3 +5226,44 @@ h3::after {
         margin-top: 40px;
     }
 }
+.about_thumb2 .img_1 img,
+.about_thumb2 .img_2 img {
+    width: 100%;
+    height: 280px;      /* make both images same height */
+    object-fit: cover;  /* crops nicely without distortion */
+    border-radius: 10px; /* optional */
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .about_thumb2 .img_1 img,
+    .about_thumb2 .img_2 img {
+        height: 180px;  /* smaller on phones */
+    }
+}
+.about_thumb2 .img_1,
+.about_thumb2 .img_2 {
+    width: 50%;                 /* make both equally wide */
+}
+
+.about_thumb2 .img_1 img,
+.about_thumb2 .img_2 img {
+    width: 100%;
+    aspect-ratio: 1 / 1;        /* makes it a perfect square */
+    object-fit: cover;          /* crops nicely */
+    border-radius: 10px;        /* optional */
+}
+
+/* Mobile: stack images but keep square shape */
+@media (max-width: 768px) {
+    .about_thumb2 {
+        flex-direction: column;
+    }
+
+    .about_thumb2 .img_1,
+    .about_thumb2 .img_2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
